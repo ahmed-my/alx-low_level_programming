@@ -1,7 +1,8 @@
 #include <unistd.h>
 /**
- * Main - Entry point for the program
- * Program to print out using write() function
+ * main - Entry point for the program
+ *
+ * Description: Program to print out using write() function
  * Return: Always 1 (Error)
  */
 int main(void)
