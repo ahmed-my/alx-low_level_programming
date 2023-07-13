@@ -2,7 +2,6 @@
 /**
  * main - Entry point for the program
  *
- * Description: A program to print size of char int long int long long int float
  * Return: Always 0 (Success)
  */
 int main(void)
