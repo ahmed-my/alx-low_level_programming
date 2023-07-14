@@ -31,5 +31,6 @@ int main(void)
 	{
 		write(1, "statement not specified", 23);
 		return (1);
+	}
 	return (0);
 }
