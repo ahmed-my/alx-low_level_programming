@@ -15,7 +15,7 @@ int main(void)
 		if (num == 9)
 			break;
 		putchar(',');
-		putchat(' ');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
