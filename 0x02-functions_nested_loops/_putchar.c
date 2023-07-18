@@ -4,6 +4,7 @@
 /**
  * _putchar: prints a char
  *
+ * print_alphabet(): print letters of the alphabet in lower case
  */
 int _putchar(char c)
 {
