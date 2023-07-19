@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - A program to determine alphabet
- * @c: The number to be checked
+ * @c: The number to check
  *
  * Return: Success 0
  */
