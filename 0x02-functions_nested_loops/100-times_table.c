@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - prints the times table
- * @n: The integer to check
+ * @n: The integer to be checked
  *
  * Return: Always 0.
  */
