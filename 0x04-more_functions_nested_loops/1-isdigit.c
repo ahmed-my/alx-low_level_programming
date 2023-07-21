@@ -7,9 +7,7 @@
   */
 int _isdigit(int c)
 {
-	for (c = 0; c <= 9; c++)
-	{
-		if ((c / 10 + '0') <= 0)
+		if ((c / 10 ) <= 0)
 		{
 			return (1);
 		}
@@ -17,6 +15,4 @@ int _isdigit(int c)
 		{
 			return (0);
 		}
-	}
-	return (0);
 }

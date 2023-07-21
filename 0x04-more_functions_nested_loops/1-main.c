@@ -8,7 +8,7 @@ int main(void)
 {
 int i;
 
-i = 9;
-_isdigit(i);
+i = _isdigit(9);
+_putchar(i + '0');
 return (0);
 }
