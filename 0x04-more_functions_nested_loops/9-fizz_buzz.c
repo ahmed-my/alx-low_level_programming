@@ -21,10 +21,9 @@ int main(void)
 			printf("Buzz");
 		}
 		else
-		{
 			printf("%d", n);
-		}
-		printf(" ");
+		if (n < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
