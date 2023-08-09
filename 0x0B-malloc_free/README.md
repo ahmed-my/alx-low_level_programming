@@ -1,4 +1,4 @@
- - malloc, free
+ - malloc, free memory allocation
  README.md
 
 ##C - malloc, free
