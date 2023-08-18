@@ -14,30 +14,37 @@ void print_all(const char * const format, ...)
 	va_list list_of_arg;
 
 	va_start(list_of_arg, format);
-	while (format[i])
+
+	if (format)
 	{
-		if (format[i] == 'c')
+		while (format[i])
 		{
-			printf("%s%c", sep, va_arg(list_of_arg, int));
+			switch (format[i])
+			{
+				case 'c':
+					printf("%s%c", sep, va_arg(list_of_arg, int));
+					break;
+				case 'i':
+					printf("%s%d", sep, va_arg(list_of_arg, int));
+					break;
+				case 'f':
+					printf("%s%f", sep, va_arg(list_of_arg, double));
+					break;
+				case 's':
+					str = va_arg(list_of_arg, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s%s", sep, str);
+					break;
+				default:
+					i++;
+					continue;
+			}
+			sep = ", ";
+			i++;
 		}
-		else if (format[i] == 'i')
-		{
-			printf("%s%d", sep, va_arg(list_of_arg, int));
-		}
-		else if (format[i] == 'f')
-		{
-			printf("%s%f", sep, va_arg(list_of_arg, double));
-		}
-		else if (format[i] == 's')
-		{
-			str = va_arg(list_of_arg, char *);
-			if (!str)
-				str = "(nil)";
-			printf("%s%s", sep, str);
-		}
-		i++;
-		sep = ", ";
 	}
+
 	printf("\n");
 	va_end(list_of_arg);
 }
