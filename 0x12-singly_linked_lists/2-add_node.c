@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node 
+ * add_node - adds a new node
  * @head: pointer to pointer to the list_t list
- * @str: string to be added 
+ * @str: string to be added
  *
  * Return: address of the element
  */
