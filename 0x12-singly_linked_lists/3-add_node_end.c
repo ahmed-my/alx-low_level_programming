@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-  * add_node_end - add new node
-  * @head: pointer to pointer
-  * @str: string in the new node
-  *
-  * Return: address
-  */
+ * add_node_end - add new node
+ * @head: pointer to pointer
+ * @str: string in the new node
+ *
+ * Return: address
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	unsigned int length = 0;
