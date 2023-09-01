@@ -7,15 +7,16 @@
 void print_binary(unsigned long int n)
 {
 	int i;
-	bool significantBitFound = false;
+	int significantBitFound = 0;
 
 	for (i = 63; i >= 0; i--)
 	{
 		unsigned long int mask = 1UL << i;
+
 		if (n & mask)
 		{
 			_putchar('1');
-			significantBitFound = true;
+			significantBitFound = 1;
 		}
 		else if (significantBitFound)
 		{
@@ -23,9 +24,8 @@ void print_binary(unsigned long int n)
 		}
 	}
 
-	if (!significantBitFound)
+	if (significantBitFound == 0)
 	{
 		_putchar('0');
 	}
-	_putchar('\n');
 }
