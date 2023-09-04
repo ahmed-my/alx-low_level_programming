@@ -1,4 +1,4 @@
-#include "main.h"
+iinclude "main.h"
 /**
  * create_file - function that creates a file
  * @filename: pointer to char
@@ -25,9 +25,7 @@ int create_file(const char *filename, char *text_content)
 	w_write = write(file_descriptor, text_content, lenght);
 
 	if (file_descriptor == -1 || w_write == -1)
-	{
 		return (-1);
-	}
 
 	close(file_descriptor);
 	return (1);
