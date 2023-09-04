@@ -1,1 +1,1 @@
-# *Programming in C, low level*
+# *Programming in C, low level programming*
