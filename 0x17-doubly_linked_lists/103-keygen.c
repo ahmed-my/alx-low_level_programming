@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	p[1] = l[(add ^ 79) & 63];
 	for (j = 0, a = 1; j < length; j++)
 		a *= argv[1][j];
-	p[2] = l[(b ^ 85) & 63];
+	p[2] = l[(a ^ 85) & 63];
 	for (a = argv[1][0], j = 0; j < length; j++)
 		if ((char)a <= argv[1][j])
 			a = argv[1][j];
