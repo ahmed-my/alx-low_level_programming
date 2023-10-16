@@ -9,11 +9,11 @@
  */
 int main(void)
 {
+	/* Seed the random number generator */
 	srand(time(NULL));
 
 	int i, number;
-
-	printf("Your six numbers are:\n");
+	int n1 = 9, n2 = 8, n3 = 10, n4 = 24, n5 = 75, bonus = 9;
 
 	/* Generate five numbers from 1 to 75 */
 	for (i = 1; i <= 5; i++)
@@ -24,8 +24,15 @@ int main(void)
 
 	/* Generate one number from 1 to 15 */
 	number = rand() % 15 + 1;
-	printf("+ %d\n", number);
+	printf(" %d\n", number);
+
+	/* Check if the generated numbers match the specific values */
+	if (n1 == number && n2 == number && n3 == number && n4 == number
+			&& n5 == number && bonus == number) {
+		printf("--> Please make me win!\n");
+	}
 
 	return (0);
 }
+
 
