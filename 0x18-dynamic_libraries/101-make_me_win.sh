@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -shared -o my_program.so my_program.c
+$ gcc -shared -o mymalloc.so -fPIC my_program.c
+$ LD_PRELOAD=./mymalloc.so ./gm
