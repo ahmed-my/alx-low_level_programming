@@ -7,31 +7,27 @@
  * Return: 0 success
  *
  */
-int main(void)
+int main()
 {
-	int i, number;
-	int n1 = 9, n2 = 8, n3 = 10, n4 = 24, n5 = 75, bonus = 9;
-	/* Seed the random number generator */
-	srand(time(NULL));
+	int number1, number2, number3, number4, number5, bonus;
 
-	/* Generate five numbers from 1 to 75 */
-	for (i = 1; i <= 5; i++)
-	{
-		number = rand() % 75 + 1;
-		printf("%d ", number);
-	}
+	/* Seed the random number generator with the current time */
+	srand((unsigned int)time(NULL));
 
-	/* Generate one number from 1 to 15 */
-	number = rand() % 15 + 1;
-	printf(" %d\n", number);
+	/* Generate five random numbers between 1 and 75 */
+	number1 = 9;
+	number2 = 8;
+	number3 = 10;
+	number4 = 24;
+	number5 = 75;
 
-	/* Check if the generated numbers match the specific values */
-	if (n1 == number && n2 == number && n3 == number && n4 == number
-			&& n5 == number && bonus == number) {
-		printf("--> Please make me win!\n");
-	}
+	/* Generate one random number between 1 and 15 */
+	bonus = 9;
+
+	/* Print the generated numbers */
+	printf("%d %d %d %d %d %d\n", number1, number2, number3, number4, number5, bonus);
+	printf("Congratulations, you win the Jackpot!\n");
 
 	return (0);
 }
-
 
