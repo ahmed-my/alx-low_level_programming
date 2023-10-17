@@ -1,3 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD=./my_program
-./gm 9 8 10 24 75 9
+export LD_PRELOAD=/home/vagrant/alx-low_level_programming/0x18-dynamic_libraries/my_program.so
+./my_program
