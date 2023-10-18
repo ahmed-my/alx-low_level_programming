@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -shared -o my_program.so -fPIC my_program.c
-export LD_PRELOAD=./my_program.so:$LD_LIBRARY_PATH
+gcc -shared -o program.so -fPIC my_program.c
+export LD_PRELOAD=./program.so:$LD_LIBRARY_PATH

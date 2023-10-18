@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <unistd.h>
 /**
- * print - function to print to standard output
- * @format: pointer to char
- * @...: variadic function
- *
+ * main - entry point
  * Return: 0 success
+ *
  */
-int print(const char *format, ...)
+int main(void)
 {
-	write(1, "9 8 10 24 75 +9\n", 17);
+	write(1, "9 8 10 24 25 + 9\n", 17);
 	write(1, "Congratulations, you win the Jackpot!\n", 38);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
