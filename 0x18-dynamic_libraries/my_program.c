@@ -3,6 +3,7 @@
 #include <unistd.h>
 /**
  * printf - function to print to standard output
+ * @format: pointer to char
  * Return: 0 success
  *
  */
