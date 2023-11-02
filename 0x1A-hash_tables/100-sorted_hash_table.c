@@ -59,7 +59,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	temp = ht->shead;
 	while (temp)
 	{
-		if (strcmp(tmp->key, key) == 0)
+		if (strcmp(temp->key, key) == 0)
 		{
 			free(temp->value);
 			temp->value = copy_value;
@@ -102,14 +102,14 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		temp = ht->shead;
-		while (temp->snext != NULL && strcmp(tmp->snext->key, key) < 0)
+		while (temp->snext != NULL && strcmp(temp->snext->key, key) < 0)
 			temp = temp->snext;
 		new->sprev = temp;
 		new->snext = temp->snext;
 		if (temp->snext == NULL)
 			ht->stail = new;
 		else
-			tmp->snext->sprev = new;
+			temp->snext->sprev = new;
 		temp->snext = new;
 	}
 
